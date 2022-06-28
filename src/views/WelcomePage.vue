@@ -1,4 +1,4 @@
 <script setup></script>
 <template>
-    <h1>Welcome</h1>
+    <a-typography-title>Welcome</a-typography-title>
 </template>
