@@ -8,8 +8,8 @@ export default defineConfig({
     preprocessorOptions: {
       less: {
         modifyVars: {
-          'primary-color': '#c0004e',
-          'success-color': '#5dfd35'
+          // 'primary-color': '#c0004e',
+          // 'success-color': '#5dfd35'
         },
         // modifyVars: getThemeVariables({
         //   dark: true,
