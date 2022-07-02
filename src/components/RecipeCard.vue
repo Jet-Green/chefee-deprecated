@@ -43,6 +43,11 @@ onMounted(() => {
           В такое холодное время года особенно хочется чего-то яркого
         </a-typography-text>
       </div>
+      <div class="custom-card-actions mt-8">
+        <a-button style="display: flex; align-items: center;" type="primary" size="small" shape="round">
+          <span class="mdi mdi-24px mdi-arrow-right-thin"></span>
+        </a-button>
+      </div>
     </div>
   </div>
 </template>
@@ -82,5 +87,10 @@ onMounted(() => {
 
 .custom-card-subtitile {
   font-weight: light;
+}
+
+.custom-card-actions {
+  display: flex;
+  justify-content: end;
 }
 </style>
