@@ -13,7 +13,7 @@ import RecipeCard from '../components/RecipeCard.vue'
       </a-row>
       <a-typography-title :level="3">Рекомендуемое</a-typography-title>
       <a-row style="display: flex; flex-direction: row;">
-        <a-col v-for="(item, index) in 4" :key="index">
+        <a-col v-for="(item, index) in 4" :key="index" :span="12" :sm="8" :lg="6">
           <RecipeCard />
         </a-col>
       </a-row>
@@ -22,7 +22,7 @@ import RecipeCard from '../components/RecipeCard.vue'
       </div>
       <a-typography-title :level="3">Популярное</a-typography-title>
       <a-row style="display: flex; flex-direction: row;">
-        <a-col v-for="(item, index) in 6" :key="index">
+        <a-col v-for="(item, index) in 6" :key="index" :span="12" :sm="8" :lg="6">
           <RecipeCard />
         </a-col>
       </a-row>

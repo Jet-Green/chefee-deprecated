@@ -1,28 +1,7 @@
 <script setup>
-import { ref, onMounted } from 'vue'
-
-let cardWidth = ref(200)
-
-function onResize() {
-  let ww = window.innerWidth;
-  if (ww < 800) {
-    cardWidth.value = (ww - 50) / 2;
-  } else if (ww > 8200) {
-    let inCols = (ww / 24) * 16
-    cardWidth.value = (inCols - 60) / 3;
-  } else if (ww > 1000) {
-    let inCols = (ww / 24) * 16
-    cardWidth.value = (inCols - 90) / 5;
-  }
-}
-
-onMounted(() => {
-  onResize()
-  window.addEventListener('resize', onResize);
-})
 </script>
 <template>
-  <div class="custom-card" :style="{ 'width': cardWidth + 'px' }">
+  <div class="custom-card">
     <div class="custom-card-avatar">
       <a-avatar src="https://joeschmoe.io/api/v1/random" />
       <div class="custom-card-avatar-name">
@@ -70,16 +49,12 @@ onMounted(() => {
   margin-bottom: 8px;
 }
 
-.custom-card-avatar-name {}
-
 .custom-card-cover {
   object-fit: contain;
   display: flex;
   justify-content: center;
   background-color: #C4C4C4;
 }
-
-.custom-card-title {}
 
 .custom-card-content {
   margin: 8px;
