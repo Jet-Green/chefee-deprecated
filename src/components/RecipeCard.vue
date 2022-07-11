@@ -34,7 +34,6 @@
 .custom-card {
   margin: 4px;
   overflow: hidden;
-
   background: #FFFFFF;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
